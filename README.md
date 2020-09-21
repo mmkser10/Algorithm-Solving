@@ -8,10 +8,11 @@ Programmers : https://programmers.co.kr/learn/challenges
 
 
 ## BackJoon
-> - 20.09.04 : level2 If문, level3 For문 완료  
-> - 20.09.14 : level4 While문 완료  
-> - 20.09.15 : Level6 1차원 배열 완료  
-> - 20.09.16 : Level1 입출력과 사칙연산, Level7 함수 완료  
+> - 20.09.04 : Lv2 If문, Lv3 For문 완료  
+> - 20.09.14 : Lv4 While문 완료  
+> - 20.09.15 : Lv5 1차원 배열 완료  
+> - 20.09.16 : Lv1 입출력과 사칙연산, Lv6 함수 완료  
+> - 20.09.18 : Lv7 문자열 완료  
 
 ## Programmers
 > -
