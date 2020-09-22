@@ -13,6 +13,7 @@ Programmers : https://programmers.co.kr/learn/challenges
 > - 20.09.15 : Lv5 1차원 배열 완료  
 > - 20.09.16 : Lv1 입출력과 사칙연산, Lv6 함수 완료  
 > - 20.09.18 : Lv7 문자열 완료  
+> - 20.09.22 : Lv8 수학1 완료  
 
 ## Programmers
 > -
