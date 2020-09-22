@@ -14,6 +14,5 @@ public class Main {
             word = word.replace(words[i], "!");
         }
         System.out.print(word.length());
-
     }
 }
