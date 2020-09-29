@@ -11,34 +11,35 @@ public class Main {
         int M = Integer.parseInt(st.nextToken());
 
         char[][] chess = new char[N][M];
-        char[] BW = new char[2];
-        String point;
-        int result = 100000;
+        char[] BW = new char[]{'B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'};
+        char[] WB = new char[]{'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'};
+        int result = N * M;
 
-        for(int i = 0 ; i < N ; i++){
-            point = br.readLine();
-            for(int j = 0 ; j < M ; j++){
+        for (int i = 0; i < N; i++) {
+            String point = br.readLine();
+            for (int j = 0; j < M; j++) {
                 chess[i][j] = point.charAt(j);
             }
         }
 
-        for(int x = 0 ; x <= N-8 ; x++){
-            for(int y = 0 ; y <= M-8 ; y++){
-                int count = 0;
-                boolean black_Check;
-                for(int a = 0+x ; a < 8+x ; a++){
-                    int black = 0;
-                    int white = 0;
-                    for(int b = 0+y ; b < 8+y ; b++) {
-                        if (chess[a][y + 0] == 'B') {
-                            black_Check = true;
-                        }
-                        else {
-                            black_Check = false;
+        for (int x = 0; x <= N - 8; x++) {
+            for (int y = 0; y <= M - 8; y++) {
+                int countA = 0;
+                int countB = 0;
+                for (int a = 0; a < 8; a++) {
+                    for (int b = 0; b < 8; b++) {
+                        if (a % 2 == 0) {
+                            if (chess[a + x][b + y] != WB[b]) {
+                                countA++;
+                            } else countB++;
+                        } else {
+                            if (chess[a + x][b + y] != BW[b]) {
+                                countA++;
+                            } else countB++;
                         }
                     }
                 }
-                result = Math.min(result, count);
+                result = Math.min(result, Math.min(countA, countB));
             }
         }
         System.out.println(result);
