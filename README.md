@@ -15,6 +15,7 @@ Programmers : https://programmers.co.kr/learn/challenges
 > - 20.09.18 : Lv7 문자열 완료  
 > - 20.09.22 : Lv8 수학1 완료  
 > - 20.09.23 : Lv9 재귀 완료 
+> - 20.09.29 : Lv11 브루트 포스 완료 
 
 ## Programmers
 > -
